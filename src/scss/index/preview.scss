@@ -1,0 +1,292 @@
+/*---
+Latest Preview Section 
+---*/
+.latest-preview-section {
+  background-color: $background-color; //#080808
+  padding-top: 35px;
+  padding-bottom: 34px;
+
+  .m-w-ds {
+    //  ----- Media Queries ------
+    @include mq-desktop {
+      max-width: $m-w-la;
+    }
+  }
+
+  .container {
+    @include grid;
+
+    .preview {
+      // grid-column: 3/8;
+      grid-column: 1/5;
+      grid-row: 1;
+
+      .section_title {
+        margin-bottom: 25px;
+
+        h5 {
+          color: $color-white;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-style: italic;
+          padding-left: 16px;
+          letter-spacing: 1px;
+          font-weight: 700;
+          position: relative;
+          margin-bottom: 0;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: 18px;
+            width: 11px;
+            background-color: $color;
+            transform: skewX(-15deg);
+          }
+        }
+      }
+
+      // Preview End
+    }
+
+    .slider_latest {
+      // grid-column: 3/11;
+      grid-column: 1/13;
+      grid-row: 2;
+      overflow: hidden;
+
+      .lp_slider {
+        padding-right: 100px;
+
+        //  ----- Media Queries ------
+        @include mq-desktop {
+          padding-right: 0;
+        }
+      }
+
+      .carousel {
+        display: block;
+        width: 100%;
+        z-index: 1;
+
+        .stage_outer {
+          position: relative;
+          overflow: hidden;
+
+          .ol_stage {
+            position: relative;
+            touch-action: manipulation;
+
+            .item {
+              touch-action: pan-y;
+              user-select: none;
+              float: left;
+              min-height: 1px;
+
+              .col_item {
+                max-width: 100%;
+
+                .lp_pic {
+                  position: relative;
+                  height: 180px;
+                }
+
+                .review_loader {
+                  background-color: rgba(0, 0, 0, 0.5);
+                  display: inline-block;
+                  border-radius: 50%;
+                  height: 40px;
+                  width: 40px;
+                  position: absolute;
+                  right: 29px;
+                  top: 10px;
+
+                  svg {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 43px;
+                    height: 43px;
+
+                    .progressbar_track {
+                      fill: transparent;
+                      stroke-width: 2px;
+                    }
+
+                    .progressbar_thumb {
+                      @include progressbar_thumb;
+                    }
+
+                    .progressbar__thumb--track-1 {
+                      animation-duration: 1.8s;
+                    }
+
+                    .progressbar__thumb--track-2 {
+                      animation-duration: 1.6s;
+                      animation-delay: 0.2s;
+                    }
+
+                    .progressbar__thumb--track-3 {
+                      animation-duration: 1.2s;
+                      animation-delay: 0.4s;
+                    }
+                  }
+
+                  .loader_circle {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+
+                  .label {
+                    font-size: 14px;
+                    color: #ffffff;
+                    font-weight: 500;
+                    text-align: center;
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    transform: scale(0);
+                    animation: pulse 400ms 1.6s forwards;
+                  }
+                }
+              }
+            }
+
+            .lp_text {
+              padding-top: 5px;
+
+              h6 {
+                margin-bottom: 4px;
+                margin-top: 10px;
+                font-size: 16px;
+
+                a {
+                  color: $color-white;
+                  line-height: 22px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.5px;
+                }
+              }
+
+              ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                  font-size: 12px;
+                  color: #666666;
+                  font-style: italic;
+                  display: inline-block;
+                  position: relative;
+                  margin-right: 22px;
+
+                  &:first-child {
+                    &:after {
+                      content: "/";
+                      position: absolute;
+                      right: -14px;
+                      top: 2px;
+                    }
+                  }
+                }
+
+                &:last-child {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .dots {
+        text-align: center;
+        padding-top: 36px;
+
+        button {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .dot {
+          color: inherit;
+          background-color: #676868;
+          border: none;
+          padding: 0;
+        }
+
+        .active {
+          background-color: $color !important;
+        }
+      }
+    }
+
+    // Slider End
+
+    .nav {
+      // grid-column: 9/11;
+      grid-column: 10/10;
+      grid-row: 1;
+      margin-top: 35px;
+      position: relative;
+      left: 150px;
+      bottom: 0;
+
+      button {
+        background-color: $background-color;
+        border: none;
+      }
+
+      i {
+        font-size: 25px;
+        color: #eaeaea4d;
+      }
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+@keyframes progress {
+  to {
+    stroke-dasharray: 87;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+// @keyframes flyin {
+//   from {
+//     max-height: 0;
+//     opacity: 0;
+//   }
+//   to {
+//     max-height: 20px;
+//     opacity: .5;
+//   }
+// }

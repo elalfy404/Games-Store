@@ -1,0 +1,11 @@
+// Search Model Begin
+.search-model#mySearch-model(style={'display':'none'})
+  .search-center
+    .search-close-switch#search-close
+      span.closebtn(title='Close Overlay') x
+    .overlay-content
+      form(action="#").search-model-form
+        input(type="text" placeholder='search...' name='search')#search-input
+        button(type='submit')
+          i.fas.fa-search
+// Search Model End

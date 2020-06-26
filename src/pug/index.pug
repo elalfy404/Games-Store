@@ -1,0 +1,31 @@
+include ./Menu/mixin
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="keywords" content="Amin, unica, creative, html")
+    meta(name="description", content="Games Store")
+    meta(name="author" content="")
+    title Amin | Template
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+    link(rel="stylesheet" href="./css/main.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js")
+    script(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js")
+
+  body
+    include ./Menu/loader
+    include ./Menu/nav
+    include ./Menu/header
+    include ./Index/hero
+    include ./Index/preview
+    include ./Index/news
+    include ./Index/videos
+    include ./Index/media
+    include ./Index/footer
+    include ./Menu/search
+    include ./Menu/form
+
+    script(src="./js/main.js")

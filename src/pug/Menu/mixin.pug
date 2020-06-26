@@ -1,0 +1,119 @@
+//- Mixin img-bg
+mixin img-bg(src,alt)
+  img.hs_item.set_bg(
+    src= src,
+    alt= alt
+)&attributes(attributes)
+
+//- Mixin tab-lg News
+mixin tab-lg(src,alt,label,a,admin,cl,cm)
+  .un_big_item.set_tab
+    img.img(src= src,alt= alt)
+  .ub_text
+    .label
+      span= label
+    h5
+      a(href="#")= a
+    ul
+      li by
+        span= admin
+      li
+        i.far.fa-clock
+        = cl
+      li
+        i.far.fa-comment
+        = cm
+
+//- Mixin tab News
+mixin tab(src,alt,label,a,cl,cm)
+  .un_big_item.set_tab
+    img.img(src= src,alt= alt)
+    .label
+      span= label
+  .ub_text
+    h6
+      a(href="#")= a
+    ul
+      li
+        i.far.fa-clock
+        = cl
+      li
+        i.far.fa-comment
+        = cm
+
+//- Mixin  preview
+
+mixin item-pre(src,alt,label,a,clock,comment)
+  .set_bg.lp_pic
+    img(src= src, alt= alt)
+    .review_loader.charts_container
+      svg(viewBox='-1 0 38 45')
+        circle.progressbar_track(cx='20' cy='20' r='20')
+        circle.progressbar_thumb.progressbar__thumb--track-1(cx='20' cy='20' r='20')
+        circle.progressbar_thumb.progressbar__thumb--track-2(cx='20' cy='20' r='20')
+        circle.progressbar_thumb.progressbar__thumb--track-3(cx='20' cy='20' r='20')
+      .loader_circle.pie_wrapper
+        span.label= label
+  .lp_text
+    h6
+      a(href="#")= a
+    ul
+      li
+        i.far.fa-clock= clock
+      li
+        i.far.fa-comment= comment
+
+//- Mixin News
+
+mixin trending(src,alt,a,clock,comment)
+  .ti_pic
+    img(src= src, alt= alt)
+  .ti_text
+    h6
+      a(href="#")= a
+    ul
+      li
+        i.far.fa-clock= clock
+      li
+        i.far.fa-comment= comment
+
+
+//- Mixin Videos 
+
+mixin vid(src,alt,h5)
+  .large.set_bg
+    img(src= src, alt= alt)
+    button(type="button").play_btn.video_popup(id!=attributes.id)
+      i.fas.fa-play
+  .vg_text
+    h5(class!=attributes.class)= h5
+
+//- Mixin Media
+mixin media(src, alt, span, h5, come)
+  .ip_pic
+    img(src= src, alt= alt)
+  .ip_text
+    .label
+      span= span
+    h5
+      a(href="#")= h5
+    ul
+      li by
+        span Admin
+      li
+        i.far.fa-clock Aug 03,2020
+      li
+        i.far.fa-comment= come
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices...
+
+
+//- Mixin Media 
+mixin best(label)
+  .loader_circle
+    svg(viewBox='-1 0 38 45')
+      circle.progressbar_track(cx='20' cy='20' r='20')
+      circle.progressbar__thumb--track-1(cx='20' cy='20' r='20')(class!=attributes.class)
+      circle.progressbar__thumb--track-2(cx='20' cy='20' r='20')(class!=attributes.class)
+      circle.progressbar__thumb--track-3(cx='20' cy='20' r='20')(class!=attributes.class)
+      .loader_circle.pie_wrapper
+        span.label= label

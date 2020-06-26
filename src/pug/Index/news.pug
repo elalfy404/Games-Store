@@ -1,0 +1,222 @@
+// Update News Section Begin
+section.update_news_section
+  article.container.max-w-9
+    .col_tab
+      .section_title
+        h5
+          span News & Update
+      .tab_elem
+        ul.nav.nav_tabs(role='tablist')
+          li.nav_item.tabs-1
+            span.nav_link.active(data-class='all' role='tab') All
+          li.nav_item.tabs-1
+            span.nav_link(data-class='platform' role='tab') Platform
+          li.nav_item.tabs-1
+            span.nav_link(data-class='hardware' role='tab') Hardware
+          li.nav_item.tabs-1
+            span.nav_link(data-class='reviews' role='tab') Reviews
+        // Tab Panes
+      .tab_content
+        .column-lg.max-width-e.tab.fo-lf(data-class='reviews')
+          .content
+            +tab-lg(
+              './images/news/news-1.jpg',
+              'news',
+              'Reviews',
+              'Get one of our favorite nvme ssds, the 2tb samsung 970 evo, for $120 less than nomal',
+              'Admin',
+              'Aug 02, 2020',
+              '22'
+            )
+        .column-lg.max-width-s.tab.fo-rg(data-class='reviews')
+          .content
+            +tab-lg(
+              './images/news/cl-8.jpg',
+              'news',
+              'Reviews',
+              'Get one of our favorite nvme ssds, the 2tb samsung 970 evo, for $120 less than nomal',
+              'Admin',
+              'Aug 02, 2020',
+              '42'
+            )
+            //- style={'display':'none'} hardware 
+        .column-lg.max-width-e.tab#hardware.fo-lf(data-class='hardware' style={'display':'none'})
+          .content
+            +tab-lg(
+              './images/news/cl-4.jpg',
+              'news',
+              'Reviews',
+              'Get one of our favorite nvme ssds, the 2tb samsung 970 evo, for $120 less than nomal',
+              'Admin',
+              'Aug 02, 2020',
+              '22'
+            )
+        .column-lg.max-width-s.tab#hard.fo-rg(data-class='hardware' style={'display':'none'})
+          .content
+            +tab-lg(
+              './images/news/cl-8.jpg',
+              'news',
+              'Reviews',
+              'Get one of our favorite nvme ssds, the 2tb samsung 970 evo, for $120 less than nomal',
+              'Admin',
+              'Aug 02, 2020',
+              '42'
+            )
+            //-  
+        .column-lg.max-width-e.tab.fo-lf(data-class='platform')
+          .content
+            +tab-lg(
+              './images/news/cl-4.jpg',
+              'news',
+              'Reviews',
+              'Get one of our favorite nvme ssds, the 2tb samsung 970 evo, for $120 less than nomal',
+              'Admin',
+              'Aug 03, 2020',
+              '32'
+            )
+        .column-lg.max-width-s.tab.fo-rg(data-class='platform')
+          .content
+            +tab-lg(
+              './images/news/cl-6.jpg',
+              'news',
+              'Reviews',
+              'Get one of our favorite nvme ssds, the 2tb samsung 970 evo, for $120 less than nomal',
+              'Admin',
+              'Aug 04, 2020',
+              '222'
+              )
+        .column.float-left.top.tab(data-class='reviews')
+          .content
+            +tab(
+              './images/news/news-4.jpg',
+              'news',
+              'Reviews',
+              'Downwell and space hulk: tactics are coming to...',
+              'Ang 04,2020',
+              '88'
+            )
+        .column.float-left.tab#hardware2(data-class='hardware')
+          .content
+            +tab(
+              './images/news/news-2.jpg',
+              'news',
+              'Reviews',
+              'Downwell and space hulk: tactics are coming to...',
+              'Ang 04,2020',
+              '88'
+            )
+        .column.float-left.tab(data-class='reviews')
+          .content
+            +tab(
+              './images/news/news-3.jpg',
+              'news',
+              'Reviews',
+              'Downwell and space hulk: tactics are coming to...',
+              'Ang 04,2020',
+              '88'
+            )
+        .column.float-left-tow.tab#platform(data-class='platform')
+          .content
+            +tab(
+              './images/news/news-2.jpg',
+              'news',
+              'Reviews',
+              'Downwell and space hulk: tactics are coming to...',
+              'Ang 04,2020',
+              '88'
+            )
+        .column.float-left-tow.tab(data-class='hardware')
+          .content
+            +tab(
+              './images/news/news-3.jpg',
+              'news',
+              'Reviews',
+              'Downwell and space hulk: tactics are coming to...',
+              'Ang 04,2020',
+              '88'
+            )
+        .column.float-left-tow.tab(data-class='platform')
+          .content
+            +tab(
+              './images/news/news-4.jpg',
+              'news',
+              'Reviews',
+              'Downwell and space hulk: tactics are coming to...',
+              'Ang 04,2020',
+              '88'
+            )
+      // tab End
+    .sidebar_option
+      .social_media
+        .section_title
+          h5 Social media
+        ul
+          li.fac-hov
+            .sm-icon 
+              i.fab.fa-facebook-f
+            span Facebook
+            .follow 
+              | 99.3K Follow
+          li.twi-hov
+            .sm-icon
+              i.fab.fa-twitter
+            span Twitter
+            .follow 
+              | 62.1K Follow
+          li.you-hov
+            .sm-icon
+              i.fab.fa-youtube
+            span Youtube
+            .follow 
+              | 40.9K Follow
+          li.ins-hov
+            .sm-icon
+              i.fab.fa-instagram
+            span Instagram
+            .follow 
+              | 35.1K Follow
+      .hardware_guides
+        .section_title
+          h5 Hardware guides
+        .trending_item
+          +trending(
+            './images/trending/trending-5.jpg',
+            'trending',
+            'A Monster Prom poster got hijacked for a Papa Roach concert...',
+            'Aug 02,2020',
+            '54'
+          )
+        .trending_item
+          +trending(
+            './images/trending/trending-1.jpg',
+            'trending',
+            'A Monster Prom poster got hijacked for a Papa Roach concert...',
+            'Aug 02,2020',
+            '19'
+          )
+        .trending_item
+          +trending(
+            './images/trending/trending-4.jpg',
+            'trending',
+            'A Monster Prom poster got hijacked for a Papa Roach concert...',
+            'Aug 02,2020',
+            '24'
+          )
+        .trending_item
+          +trending(
+            './images/trending/trending-7.jpg',
+            'trending',
+            'A Monster Prom poster got hijacked for a Papa Roach concert...',
+            'Aug 07,2020',
+            '32'
+          )
+        .trending_item
+          +trending(
+            './images/trending/trending-3.jpg',
+            'trending',
+            'A Monster Prom poster got hijacked for a Papa Roach concert...',
+            'Aug 09,2020',
+            '40'
+          )
+
+// Update News Section End

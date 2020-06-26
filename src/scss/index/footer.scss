@@ -1,0 +1,237 @@
+.footer_section {
+  background: #080808; //$background-color
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  .container {
+    @include grid;
+
+    .about {
+      grid-column: 3/6;
+      grid-row: 1;
+      padding-right: 100px;
+
+      //  ----- Media Queries ------
+      @include mq-desktop {
+        grid-column: 2/6;
+        padding-right: 72px;
+      }
+
+      //  ----- Media Queries ------
+      @include mq-desktop-md {
+        grid-column: 1/6;
+        padding-right: 125px;
+      }
+
+      .footer_about {
+        margin-bottom: 30px;
+
+        .fa_logo {
+          margin-bottom: 22px;
+
+          a {
+            display: inline-block;
+
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #c4c4c4;
+          font-weight: 400;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+
+        .fa_social {
+          a {
+            color: $color-white;
+            background: $color-black;
+            display: inline-block;
+            font-size: 14px;
+            height: 46px;
+            width: 46px;
+            line-height: 46px;
+            text-align: center;
+            transform: skewX(-15deg);
+            margin-right: 4px;
+
+            i {
+              transform: skewX(15deg);
+            }
+
+            &:hover {
+              background: #3b5998;
+            }
+
+            &:nth-child(2) {
+              &:hover {
+                background: #4679e7;
+              }
+            }
+
+            &:nth-child(3) {
+              &:hover {
+                background: $color;
+              }
+            }
+
+            &:nth-child(4) {
+              &:hover {
+                background: #ee4a62;
+              }
+            }
+          }
+        }
+      }
+
+      // About End
+    }
+
+    .editor {
+      grid-column: 5/8;
+      grid-row: 1;
+      margin-left: 65px;
+
+      //  ----- Media Queries ------
+      @include mq-desktop {
+        grid-column: 5/9;
+      }
+
+      //  ----- Media Queries ------
+      @include mq-desktop-md {
+        grid-column: 4/9;
+      }
+
+      .editor_choice {
+        margin-bottom: 30px;
+
+        .section_title {
+          margin-bottom: 25px;
+
+          h5 {
+            @include h5;
+
+            &::after {
+              @include h5-after;
+            }
+          }
+        }
+
+        .ec_item {
+          margin-bottom: 40px;
+          overflow: hidden;
+
+          .ec_pic {
+            float: left;
+
+            img {
+              width: 100%;
+              display: block;
+            }
+          }
+
+          .ec_text {
+            overflow: hidden;
+            padding-left: 20px;
+            padding-right: 50px;
+
+            h6 {
+              margin-bottom: 4px;
+              margin-top: 0;
+
+              a {
+                color: #c4c4c4;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+              }
+            }
+
+            ul {
+              margin: 0;
+              padding: 0;
+
+              li {
+                color: #666666;
+                display: inline-block;
+                position: relative;
+                font-size: 12px;
+                font-style: italic;
+                margin-right: 20px;
+
+                &:first-child::after {
+                  @include un_text_li_after;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Editor End
+    }
+
+    .tags {
+      grid-column: 8/11;
+      grid-row: 1;
+      margin-left: 20px;
+      margin-left: 50px;
+
+      //  ----- Media Queries ------
+      @include mq-desktop {
+        grid-column: 9/13;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      //  ----- Media Queries ------
+      @include mq-desktop-md {
+        grid-column: 9/13;
+      }
+
+      .tags_cloud {
+        margin-bottom: 30px;
+
+        .section_title {
+          margin-bottom: 25px;
+
+          h5 {
+            @include h5;
+
+            &::after {
+              @include h5-after;
+            }
+          }
+        }
+
+        .tags_list {
+          a {
+            display: inline-block;
+            font-size: 13px;
+            color: #c4c4c4;
+            padding: 6px 12px 5px;
+            border: 1px solid #363636;
+            transform: skewX(-15deg);
+            margin-right: 9px;
+            margin-bottom: 15px;
+
+            span {
+              display: inline-block;
+              transform: skewX(15deg);
+            }
+          }
+        }
+      }
+
+      // Tags End
+    }
+  }
+}
+
+// }

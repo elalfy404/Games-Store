@@ -1,0 +1,137 @@
+// Media Post Section Begin
+section.media_post_section.span
+  article.container.max-w-9
+    .r_content
+      .col
+        .section_title
+          h5 Instagram
+        .ip_item
+          +media(
+            './images/instagram/insta-1.jpg',
+            'img in instagram',
+            'Reviews',
+            'Heres an hour of side-quests from The Outer Worlds...',
+            '50'
+          )
+        .ip_item
+          +media(
+            './images/instagram/insta-2.jpg',
+            'img in instagram',
+            'Windows',
+            'Heres an hour of side-quests from The Outer Worlds...',
+            '40'
+          )
+        .ip_item
+          +media(
+            './images/instagram/insta-3.jpg',
+            'img in instagram',
+            'Hardware',
+            'Heres an hour of side-quests from The Outer Worlds...',
+            '60'
+          )
+        .ip_item
+          +media(
+            './images/instagram/insta-4.jpg',
+            'img in instagram',
+            'PlayStation',
+            'Heres an hour of side-quests from The Outer Worlds...',
+            '80'
+          )
+        .pagination_item
+          a(href="#")
+            span 1
+          a(href="#")
+            span 2
+          a(href="#")
+            span 3
+          a(href="#")
+            span Next
+    .col.sidebar_option
+      .col-media
+        .insta_media
+          .section_title
+            h5 Instagram
+          .insta_pic
+            +img-bg(
+              './images/instagram/ip-1.jpg',
+              'instagram'
+            )
+            +img-bg(
+              './images/instagram/ip-2.jpg',
+              'instagram'
+            )
+            +img-bg(
+              './images/instagram/ip-3.jpg',
+              'instagram'
+            )
+            +img-bg(
+              './images/instagram/ip-4.jpg',
+              'instagram'
+            )
+      .best_of_post
+        .section_title
+          h5 Best of
+        .bp_item
+          .bp_loader
+            +best('9.5')(class='progressbar_thumb')
+          .bp_text
+            h6 
+              a(href="#") This gaming laptop with a GTX 1660...
+            ul
+              li 
+                i.far.fa-clock 
+                |Aug 03,2020
+              li 
+                i.far.fa-comment
+                |50
+        .bp_item
+          .bp_loader
+            +best('8.5')(class='progressbar_thumb2')
+          .bp_text
+            h6 
+              a(href="#") This gaming laptop with a GTX 1660...
+            ul
+              li 
+                i.far.fa-clock 
+                |Aug 03,2020
+              li 
+                i.far.fa-comment
+                |45
+        .bp_item
+          .bp_loader
+            +best('8.0')(class='progressbar_thumb3')
+          .bp_text
+            h6 
+              a(href="#") This gaming laptop with a GTX 1660...
+            ul
+              li 
+                i.far.fa-clock 
+                |Aug 03,2020
+              li 
+                i.far.fa-comment
+                |70
+        .bp_item
+          .bp_loader
+            +best('7.5')(class='progressbar_thumb4')
+          .bp_text
+            h6 
+              a(href="#") This gaming laptop with a GTX 1660...
+            ul
+              li 
+                i.far.fa-clock 
+                |Aug 03,2020
+              li 
+                i.far.fa-comment
+                |26
+      .subscribe_option
+        .section_title
+          h5 Subscribe
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor.
+        .entrance
+          form(action="#")
+            input(type="text" placeholder="Name")
+            input(type="text" placeholder="Email")
+            button(type="submit")
+              span Subscribe
+
+// Media Post Section End

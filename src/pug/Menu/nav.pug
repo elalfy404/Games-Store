@@ -1,0 +1,87 @@
+//- // Menu Wrapper Hidden 
+
+// Menu Wrapper Begin 
+.menu_wrapper
+  //-&times
+  a.closebtn#closBtn(href="javascript:void(0)")
+    img(src="./images/close.svg", alt="close")
+  .show_logo
+    a(href="#")
+      img(src="./images/f-logo.png" alt="logo")
+  #mobile_menu_warp
+    .slick_nav_menu
+      .slick_nav(role="menu")(aria-hidden="false")
+        ul.menu_item
+          li.slick_nav_item.slick_nav_collapsed
+            a(href="index.html")(role="menuitem") Home
+          li.slick_nav_item.nav-dropdown#menu_hidden pages
+            i.fas.fa-angle-down
+            ul.dropdown(role="menu")(style={'display':'none'})(aria-hidden="true")
+              li
+                a(href="./categories-list.html")(role="menuitem")(tabindex="0") Categories
+              li
+                a(href="./categories-grid.html")(role="menuitem")(tabindex="0") Categories Grid
+              li
+                a(href="./typography.html")(role="menuitem")(tabindex="0") Typography
+              li
+                a(href="./details-post-default.html")(role="menuitem")(tabindex="0") post default
+              li
+                a(href="./details-post-gallery.html")(role="menuitem")(tabindex="0") Post gallery
+              li
+                a(href="./details-post-review.html")(role="menuitem")(tabindex="0") Post review
+              li
+                a( href="./contact.html")(role="menuitem")(tabindex="0") Contact
+          li.slick_nav_item.nav-dropdown#menu_hidden Reviews
+            i.fas.fa-angle-down
+            ul.dropdown(role="menu")(style={'display':'none'})(aria-hidden="true")
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Playstation
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Windows
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Mobile
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Xbox
+          li.slick_nav_item.nav-dropdown#menu_hidden Windows
+            i.fas.fa-angle-down
+            ul.dropdown(role="menu")(style={'display':'none'})(aria-hidden="true")
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Playstation
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Windows
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Mobile
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Xbox
+          li.slick_nav_item.nav-dropdown#menu_hidden Videos
+            i.fas.fa-angle-down
+            ul.dropdown(role="menu")(style={'display':'none'})(aria-hidden="true")
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Playstation
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Windows
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Mobile
+              li
+                a(href="#")(role="menuitem")(tabindex="0") Xbox
+  .hw_social
+    a.social(href="#")
+      i.fab.fa-facebook-f
+    a.social(href="#")
+      i.fab.fa-twitter
+    a.social(href="#")
+      i.fab.fa-youtube
+    a.social(href="#")
+      i.fab.fa-instagram
+  .hw-instagram-media
+    .section-title
+      h5 Instagram
+    .insta-pic
+      img(src="/images/instagram/ip-1.jpg" alt="ip")
+      img(src="/images/instagram/ip-2.jpg" alt="ip")
+      img(src="/images/instagram/ip-3.jpg" alt="ip")
+      img(src="/images/instagram/ip-4.jpg" alt="ip")
+
+// Menu Wrapper End 
+
+

@@ -1,0 +1,41 @@
+// Sign Up and Login Section Begin
+.singup-login-section(style={'display':'none'})#showSection
+  .close#closeSection
+    i.fas.fa-times
+  .singup-section(style={'display':'none'})#sigUpSection
+    .singup-text
+      .container
+        .section-title
+          h2 Sign Up
+          p Fill out the form below to recieve a free and confidential
+        form(action="#").singup-form
+          .sf-input-list
+            input(type="text" name='user name' placeholder='User Name').input-value
+            input(type="text" name='fall name' placeholder='Full Name').input-value
+            input(type="email" name="email" placeholder='Email Address').input-value
+            input(type="password" name='password' placeholder='Password').input-value
+            input(type="password" name='confirm password' placeholder='Confirm Password').input-value
+          .radio-check
+            label(for="rc-agree")
+              |I agree with the term & conditions
+              input#rc-agree(type="checkbox" name="checkbox")
+              span.checkbox
+          button(type='submit')
+            span REGISTER NOW
+          .next-login(tabindex='0')#goInLogin
+            span Login
+  .login-section(style={'display':'none'})#loginSection
+    .login-text 
+      .container
+        .section-title
+          h2 Login 
+        form(action="#").login-form
+          .sf-input-list
+            input(type="email" name="email" placeholder='Email Address').input-value
+            input(type="password" name='password' placeholder='Password').input-value
+          button(type='submit')
+            span Login
+          .next-forgot(aria-disabled='false' tabindex='0')
+            span Forgot password?
+
+// Sign Up and Login Section End
