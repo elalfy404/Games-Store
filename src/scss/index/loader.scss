@@ -1,18 +1,20 @@
 .loader {
-  position: flex;
-  left: 0;
-  top: 0;
-  background: $background-color;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: $background-color;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    z-index: 999;
 
-  svg {
-    width: 70%;
-    height: 70%;
-    visibility: hidden;
-  }
+    svg {
+        width: 70%;
+        height: 70%;
+        visibility: hidden;
+    }
 }

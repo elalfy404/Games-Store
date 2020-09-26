@@ -1,15 +1,12 @@
-const { src, dest } = require('gulp')
+const { src, dest } = require("gulp");
 
-const { images } = require('../config/paths')
+const { images } = require("../config/paths");
 
-
-const staticFiles = done => {
-    src(images.srcImages)
-        .pipe(dest(images.tmpImages))
-    done()
-}
-
+const staticFiles = (done) => {
+  src(images.srcImages).pipe(dest(images.tmpImages));
+  done();
+};
 
 module.exports = {
-    staticFiles,
-}
+  staticFiles,
+};

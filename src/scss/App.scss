@@ -4,95 +4,95 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 //  Style body
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  background: $background-color;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: $background-color;
 }
 
 a {
-  text-decoration: none;
-  text-transform: uppercase;
-  outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
 }
 
 img {
-  vertical-align: middle;
-  border-style: none;
+    vertical-align: middle;
+    border-style: none;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 i {
-  padding-right: 3px;
+    padding-right: 3px;
 }
 
 .col-md {
-  flex: 0 0 50%;
-  max-width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .col-m {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
 }
 
 .col-lg {
-  flex: 0 0 100%;
-  max-width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .col-md,
 .col-m,
 .col-lg,
 .col {
-  position: relative;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .open-nav,
 .open-search,
 .show-video,
 .show {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .m-w-ds {
-  max-width: $m-w-ds;
+    max-width: $m-w-ds;
 }
 
 .fo-lf {
-  float: left;
+    float: left;
 }
 
 .fo-rg {
-  float: right;
+    float: right;
 }
 
 button {
-  all: unset;
+    all: unset;
 }
